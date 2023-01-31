@@ -12,7 +12,7 @@ describe ('Square', () => {
 
   //Check if three sides make a square or not
   test ('should correctly determine whether four lengths are not a square', () => {
-    const notSquare = new Square (3, 9, 2,7);
+    const notSquare = new Square (9, 6, 9,9);
     expect (notSquare.checkType ()).toEqual ('not a square');
   });
 

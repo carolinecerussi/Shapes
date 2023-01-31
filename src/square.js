@@ -6,11 +6,15 @@ export default function Square (side1, side2, side3, side4) {
 
   Square.prototype.checkType = function () {
     if (
-      this.side1 !== this.side2 || this.side3 || this.side4)
+      this.side1 !== this.side2 || 
+    this.side1 !== this.side3 || 
+    this.side1 !== this.side4 )
 {
       return 'not a square';
-    } else if (
-      this.side1 === this.side2 && this.side3 && this.side4
+    } else  (
+      this.side1 === this.side2 && 
+    this.side1 ===   this.side3 &&
+    this.side1 ===  this.side4
     ) 
       {
       return 'square!';
