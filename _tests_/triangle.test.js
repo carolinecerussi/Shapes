@@ -7,19 +7,27 @@ describe ('Triangle', () => {
     expect (triangle.side2).toEqual (4);
     expect (triangle.side3).toEqual (5);
   });
-});
 
 //Check if three sides make a triangle or not
   test('should correctly determine whether three lengths are not a triangle', () => {
     // const notTriangle = new Triangle(3,9,22);
     // expect(notTriangle.checkType()).toEqual("not a triangle");
     Triangle.prototype.checkType = function() {
+      if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3)) ) {
+        return "scalene triangle";
+      } else {
       return "not a triangle";
     }
-  });
-
+  };})
 
 
 // Check if a triangle is scalene
+  test ('should correctly determine whether three lengths make a scalene triangle', () => {
+  const scalTriangle = new Triangle (4, 5, 7);
+  expect (scalTriangle.checkType ()).toEqual ('scalene triangle');
+});
+
+});
+
 // Check if a triangle is isosceles
 // Check if a triangle is equilateral
