@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './triangle.js';
+import Triangle from '../src/triangle';
 
 function handleTriangleForm(event) {
   event.preventDefault();
@@ -11,6 +11,7 @@ function handleTriangleForm(event) {
   const length3 = parseInt(document.querySelector('#length3').value);
   const triangle = new Triangle(length1, length2, length3);
   const response = triangle.checkType();
+  console.log(response);
   const pTag = document.createElement("p");
   pTag.append(response);
   document.querySelector('#response').append(pTag);
@@ -19,3 +20,5 @@ function handleTriangleForm(event) {
 window.addEventListener("load", function() {
   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
 });
+
+handleTriangleForm();
