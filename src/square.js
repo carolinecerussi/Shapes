@@ -5,19 +5,23 @@ export default function Square (side1, side2, side3, side4) {
   this.side4 = side4;
 
   Square.prototype.checkType = function () {
-    let recResult = "";
     let squareResult = "";
     if (((this.side1 && this.side2 && this.side3) != this.side4) && ((this.side1 === this.side3) && (this.side2 === this.side4))) { 
-      recResult = "this is a rectangle";
-      console.log(Square);
+      squareResult = "this is a rectangle";
+      console.log(squareResult);
+      return squareResult;
     }
   else if ((this.side1 && this.side2 && this.side3) === this.side4)
       {
       squareResult = 'this is a square';
-      console.log(Square);
+      console.log(squareResult);
+      return squareResult;
     }
     else {
       squareResult = "not a square, or a rectangle...just a quadrilateral";
+      console.log(squareResult);
+      return squareResult;
+      ;
     }
   };
 };

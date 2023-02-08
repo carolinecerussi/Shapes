@@ -4,22 +4,30 @@ export default function Triangle(side1, side2, side3) {
   this.side3 = side3;
 }
 Triangle.prototype.checkType = function () {
+  let triResult = "";
   if (
     this.side1 > this.side2 + this.side3 ||
     this.side2 > this.side1 + this.side3 ||
     this.side3 > this.side1 + this.side2
   ) {
-    return 'not a triangle';
+    triResult= 'not a triangle';
+  return triResult;
   } else if (
     this.side1 !== this.side2 &&
     this.side1 !== this.side3 &&
     this.side2 !== this.side3
   ) {
-    return 'scalene triangle';
+    triResult= 'scalene triangle';
+    console.log(triResult);
+    return triResult;
   } else if (this.side1 === this.side2 && this.side1 === this.side3) {
-    return 'equilateral triangle';
+    triResult= 'equilateral triangle';
+    console.log(triResult);
+    return triResult;
   } else {
-    return 'isosceles triangle';
+    triResult= 'isosceles triangle';
+    console.log(triResult);
+    return triResult;
   }
 };
 
@@ -29,3 +37,5 @@ Triangle.prototype.isBigTriangle = function() {
     return "big";
   }
 };
+
+
