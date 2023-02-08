@@ -14,7 +14,7 @@ checkType() {
       console.log(pentResult);
 
     }
-  else if ((this.side1 && this.side2 && this.side3 && this.side4) === this.side5)
+  else if (this.side1 === this.side2 === this.side3 === this.side4 === this.side5)
       {
         expect(pentResult.checkType()).toEqual("this is a pentagon");
         console.log(pentResult);
