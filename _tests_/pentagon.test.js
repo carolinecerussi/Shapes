@@ -1,4 +1,4 @@
-import Pentagon from "../src/pentagon";
+import Pentagon from "../src/js/pentagon";
 
 describe ('Pentagon', () => {
   test ('should correctly determine if it is an pentagon if the sides are all equal', () => {
