@@ -1,0 +1,37 @@
+html {
+  background-color: rgba(255, 255, 255, 0.39);
+}
+body {
+  font-family: "Space Time";
+  color: purple;
+}
+button {
+  font-family: "Space Time";
+  background-color: transparent;
+  border-width: 0;
+  border-color: transparent;
+  color: purple;
+  font-size: 18pt;
+  width: 50%;
+}
+
+input {
+background-color: rgba(128, 0, 128, 0.52);
+color:white;
+width: 40pt;
+border-radius: 3pt;
+border-width: 1pt;
+margin: 2pt;
+line-height: 15pt;
+font-size: 16pt;
+}
+
+label {
+  font-size: 16pt;
+}
+
+
+
+form {
+  margin: 20px;
+}

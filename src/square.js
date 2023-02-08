@@ -17,7 +17,7 @@ export default function Square (side1, side2, side3, side4) {
       console.log(Square);
     }
     else {
-      squareResult = "not a square";
+      squareResult = "not a square, or a rectangle...just a quadrilateral";
     }
   };
 };
