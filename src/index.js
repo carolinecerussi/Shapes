@@ -1,10 +1,9 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/styles.css';
-import Triangle from './triangle.js';
-import Square from '../square';
-import Pentagon from '../pentagon';
-
+import './css/styles.css';
+import Triangle from './js/triangle';
+import Square from './js/square';
+import Pentagon from './js/pentagon';
 
 function handleTriangleForm (event) {
   event.preventDefault ();
@@ -13,11 +12,11 @@ function handleTriangleForm (event) {
   const length2 = parseInt (document.querySelector ('#length2').value);
   const length3 = parseInt (document.querySelector ('#length3').value);
   const triangle = new Triangle (length1, length2, length3);
-  const response = triangle.checkType ();
+  const response = triangle.checkType();
   console.log(response);
   const pTag = document.createElement ('p');
   pTag.append(response);
-  document.querySelector ('#response').append (pTag);
+  document.querySelector ('ul#response').append (pTag);
   document.querySelector("div#hidden").removeAttribute("class", "hidden");
   console.log(response);
 }
@@ -58,12 +57,12 @@ document.querySelector("div#hidden").removeAttribute("class", "hidden");
 
 
 
- function handleWhatForm() {
-  event.preventDefault();
-  const chooseThree = 
-  const chooseFour = 
-  const chooseFive = 
- } 
+//  function handleWhatForm() {
+//   event.preventDefault();
+//   const chooseThree = 
+//   const chooseFour = 
+//   const chooseFive = 
+//  } 
 
 
 window.addEventListener('load', function () {
