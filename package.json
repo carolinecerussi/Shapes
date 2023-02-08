@@ -1,7 +1,6 @@
 {
   "name": "shape-tracker",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
@@ -10,7 +9,7 @@
     "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caroline Cerussi",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.6",
@@ -28,5 +27,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinecerussi/Shapes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carolinecerussi/Shapes/issues"
+  },
+  "homepage": "https://github.com/carolinecerussi/Shapes#readme",
+  "description": ""
 }

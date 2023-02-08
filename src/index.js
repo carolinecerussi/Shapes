@@ -1,7 +1,9 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../src/css/styles.css"
+import "../src/css/styles.css";
+const Triangle = require("./triangle").triangleModule;
 import Triangle from './triangle.js';
+
 
 function handleTriangleForm (event) {
   event.preventDefault ();
@@ -21,3 +23,7 @@ window.addEventListener ('load', function () {
     .querySelector ('#triangle-checker-form')
     .addEventListener ('submit', handleTriangleForm);
 });
+
+
+
+//use beforeEach() for shapes to first determine what shape it is and hwat function to use. // 
